@@ -27,7 +27,6 @@ const IconInput = ({
   return (
     <Wrapper>
       <VisuallyHidden>{label}</VisuallyHidden>
-      <Label>{label}</Label>
       <InputWrapper>
         <Input
           placeholder={placeholder}
@@ -46,11 +45,6 @@ const Wrapper = styled.div`
   display: flex;
   gap: 30px;
   align-items: center;
-`;
-
-const Label = styled.label`
-  text-align: right;
-  width: 100px;
 `;
 
 const InputWrapper = styled.div`
@@ -73,7 +67,6 @@ const Input = styled.input`
   }
 
   &:focus {
-    outline: 2px solid ${COLORS.primary};
     outline-offset: 3px;
   }
 
